@@ -2,7 +2,6 @@
 <template>
   <RouterLink
     :to="link"
-    target="_blank"
     class="cardGridBlog"
   >
     <picture v-if="image">
