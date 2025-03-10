@@ -41,14 +41,14 @@ const props = defineProps({
 const cardRef = ref(null);
 const isVisible = ref(false);
 
-const handleAnimation = () => {
-  const card = cardRef.value;
-  if (card) {
-    card.style.transition = `transform ${props.duration}ms ease-out, opacity ${props.duration}ms ease-out`;
-    card.style.opacity = "1";
-    card.style.transform = "translateX(0)";
-  }
-};
+// const handleAnimation = () => {
+//   const card = cardRef.value;
+//   if (card) {
+//     card.style.transition = `transform ${props.duration}ms ease-out, opacity ${props.duration}ms ease-out`;
+//    card.style.opacity = "1";
+//     card.style.transform = "translateX(0)";
+//   }
+//  };
 
 onMounted(() => {
   const observer = new IntersectionObserver(
@@ -206,6 +206,7 @@ onMounted(() => {
 <style scoped>
 .banner-container {
   max-width: 1200px;
+  min-height:  109.672px;
   aspect-ratio: 1280 / 336.66;
   width: 100%;
   position: relative;
@@ -216,8 +217,8 @@ onMounted(() => {
   overflow: hidden;
   margin: 0 auto;
   margin-bottom: 20px;
-  opacity: 0;
-  transform: translateX(-50%);
+  opacity: 1;
+  /* transform: translateX(-50%); */
 
 }
 
