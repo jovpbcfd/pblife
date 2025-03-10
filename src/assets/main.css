@@ -2,6 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Poppins';
+    font-weight: thin;
+    font-style: normal;
+    font-display: swap;
+    src: url('./font/Poppins-Thin.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Poppins';
+    font-weight: light;
+    font-style: normal;
+    font-display: swap;
+    src: url('./font/Poppins-Light.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Poppins';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url('./font/Poppins-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Poppins';
+    font-weight: medium;
+    font-style: normal;
+    font-display: swap;
+    src: url('./font/Poppins-Medium.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    src: url('./font/Poppins-Bold.woff2') format('woff2');
+}
+
 
 /* @font-face {
     font-family: 'Poppins';
