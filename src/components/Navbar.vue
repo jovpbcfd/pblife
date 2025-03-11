@@ -2,7 +2,7 @@
 import { ref, onMounted, onUnmounted, computed } from "vue";
 import { RouterLink, useRoute } from "vue-router";
 import logo from "@/assets/img/logo.webp";
-import sortedBlogs from "@/miscellaneous/blogs/BlogDataSource.js";
+// import sortedBlogs from "@/miscellaneous/blogs/BlogDataSource.js";
 
 const isScrolled = ref(false);
 const isMenuOpen = ref(false);
@@ -13,14 +13,14 @@ const handleScroll = () => {
   isScrolled.value = window.scrollY > 10;
 };
 
-onMounted(async () => {
-  window.addEventListener("scroll", handleScroll);
-  const blogs = await sortedBlogs(); // Fetch blog data
-  blogLinks.value = blogs.map((blog) => ({
-    to: `/blogs/${blog.slug}`, // Construct blog post URLs
-    label: blog.title,
-  }));
-});
+// onMounted(async () => {
+//   window.addEventListener("scroll", handleScroll);
+//   const blogs = await sortedBlogs(); // Fetch blog data
+//   blogLinks.value = blogs.map((blog) => ({
+//     to: `/blogs/${blog.slug}`, // Construct blog post URLs
+//     label: blog.title,
+//   }));
+// });
 
 onUnmounted(() => {
   window.removeEventListener("scroll", handleScroll);
